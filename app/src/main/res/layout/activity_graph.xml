@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    tools:context=".graph">
+
+    <LinearLayout
+
+
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/x2"
+        tools:context=".MainActivity">
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:id="@+id/graph" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/x1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:text="@string/x1"
+        android:textColor="@color/blue"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/x2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/x2"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toEndOf="@+id/x1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x1"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toEndOf="@+id/x1"
+        app:layout_constraintTop_toTopOf="@+id/x1" />
+
+    <TextView
+        android:id="@+id/y1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/x1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/x1"
+        app:layout_constraintTop_toBottomOf="@+id/x1" />
+
+    <TextView
+        android:id="@+id/y11"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/x1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/x1"
+        app:layout_constraintTop_toBottomOf="@+id/y1" />
+
+    <TextView
+        android:id="@+id/y22"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="@+id/x2"
+        app:layout_constraintTop_toBottomOf="@+id/y2" />
+
+    <TextView
+        android:id="@+id/y2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="@+id/x2"
+        app:layout_constraintTop_toBottomOf="@+id/x2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x2"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toEndOf="@+id/x2"
+        app:layout_constraintTop_toTopOf="@+id/x2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/x2"
+        app:layout_constraintTop_toTopOf="@+id/x2"
+        app:srcCompat="@drawable/ic_start" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ok"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Через сеть"
+        app:layout_constraintStart_toEndOf="@+id/y2"
+        app:layout_constraintTop_toBottomOf="@+id/x2" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Через функцию"
+        app:layout_constraintStart_toEndOf="@+id/y2"
+        app:layout_constraintTop_toTopOf="@+id/y22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

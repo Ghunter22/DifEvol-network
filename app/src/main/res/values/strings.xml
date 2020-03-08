@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">nw_random</string>
+    <string name="alpha">2.0</string>
+    <string name="fi">1.3</string>
+    <string name="epoha">10</string>
+    <string name="eps">0.000001</string>
+    <string name="ct">410</string>
+    <string name="min">-1.0</string>
+    <string name="max">1.0</string>
+    <string name="x1">2.0</string>
+    <string name="x2">3.0</string>
+    <string name="p">5</string>
 </resources>
